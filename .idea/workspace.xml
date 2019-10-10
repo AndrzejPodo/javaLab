@@ -1,19 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c54a7be8-46dd-41b1-9317-57838a4b6c6a" name="Default Changelist" comment="" />
+    <list default="true" id="c54a7be8-46dd-41b1-9317-57838a4b6c6a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/javaLab.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/javaLab.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javaLab/agh/cs/lab1/Direction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaLab/agh/cs/lab1/Direction.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javaLab/agh/cs/lab1/World$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaLab/agh/cs/lab1/World$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javaLab/agh/cs/lab1/World.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaLab/agh/cs/lab1/World.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javaLab/agh/cs/lab2/Vector2d.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaLab/agh/cs/lab2/Vector2d.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javaLab/agh/cs/lab2/World.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaLab/agh/cs/lab2/World.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab1/Direction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab1/Direction.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab1/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab1/World.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab2/MapDirection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab2/MapDirection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab2/MoveDirection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab2/MoveDirection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab2/Vector2d.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab2/Vector2d.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab2/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab2/World.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit4 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1RyUH1WSFUjtaJRtH4Ag3YEJXEl" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="agh.cs.lab2" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -27,6 +68,89 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="JUnit.Vector2dTest.add">
+    <configuration name="All in javaLab" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaLab" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MapDirectionTest.previous" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaLab" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="agh.cs.lab2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="agh.cs.lab2" />
+      <option name="MAIN_CLASS_NAME" value="agh.cs.lab2.MapDirectionTest" />
+      <option name="METHOD_NAME" value="previous" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Vector2dTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaLab" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="agh.cs.lab2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="agh.cs.lab2" />
+      <option name="MAIN_CLASS_NAME" value="agh.cs.lab2.Vector2dTest" />
+      <option name="METHOD_NAME" value="add" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Vector2dTest.lowerLeft" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaLab" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="agh.cs.lab2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="agh.cs.lab2" />
+      <option name="MAIN_CLASS_NAME" value="agh.cs.lab2.Vector2dTest" />
+      <option name="METHOD_NAME" value="lowerLeft" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Vector2dTest.upperRight" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaLab" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="agh.cs.lab2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="agh.cs.lab2" />
+      <option name="MAIN_CLASS_NAME" value="agh.cs.lab2.Vector2dTest" />
+      <option name="METHOD_NAME" value="upperRight" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.Vector2dTest.add" />
+        <item itemvalue="JUnit.Vector2dTest.lowerLeft" />
+        <item itemvalue="JUnit.Vector2dTest.upperRight" />
+        <item itemvalue="JUnit.MapDirectionTest.previous" />
+        <item itemvalue="JUnit.All in javaLab" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -39,5 +163,18 @@
       <updated>1570638738704</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
