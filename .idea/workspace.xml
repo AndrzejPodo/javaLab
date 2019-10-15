@@ -2,19 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c54a7be8-46dd-41b1-9317-57838a4b6c6a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/javaLab.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/javaLab.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaLab/agh/cs/lab1/Direction.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaLab/agh/cs/lab1/Direction.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaLab/agh/cs/lab1/World$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaLab/agh/cs/lab1/World$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaLab/agh/cs/lab1/World.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaLab/agh/cs/lab1/World.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaLab/agh/cs/lab2/Vector2d.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaLab/agh/cs/lab2/Vector2d.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/javaLab/agh/cs/lab2/World.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaLab/agh/cs/lab2/World.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab1/Direction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab1/Direction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab1/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab1/World.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab2/MapDirection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab2/MapDirection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab2/MoveDirection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab2/MoveDirection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab2/Vector2d.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab2/Vector2d.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab2/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab2/World.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/agh/cs/lab2/Vector2dTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/agh/cs/lab2/Vector2dTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +58,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Vector2dTest.add">
+  <component name="RunManager" selected="JUnit.Vector2dTest.testEquals">
+    <configuration name="World" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="agh.cs.lab2.World" />
+      <module name="javaLab" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="agh.cs.lab2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="All in javaLab" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaLab" />
       <option name="PACKAGE_NAME" value="" />
@@ -77,23 +80,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MapDirectionTest.previous" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javaLab" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="agh.cs.lab2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="agh.cs.lab2" />
-      <option name="MAIN_CLASS_NAME" value="agh.cs.lab2.MapDirectionTest" />
-      <option name="METHOD_NAME" value="previous" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Vector2dTest.add" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Vector2dTest.opposite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaLab" />
       <extension name="coverage">
         <pattern>
@@ -103,13 +90,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="agh.cs.lab2" />
       <option name="MAIN_CLASS_NAME" value="agh.cs.lab2.Vector2dTest" />
-      <option name="METHOD_NAME" value="add" />
+      <option name="METHOD_NAME" value="opposite" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Vector2dTest.lowerLeft" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Vector2dTest.subtract" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaLab" />
       <extension name="coverage">
         <pattern>
@@ -119,13 +106,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="agh.cs.lab2" />
       <option name="MAIN_CLASS_NAME" value="agh.cs.lab2.Vector2dTest" />
-      <option name="METHOD_NAME" value="lowerLeft" />
+      <option name="METHOD_NAME" value="subtract" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Vector2dTest.upperRight" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Vector2dTest.testEquals" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaLab" />
       <extension name="coverage">
         <pattern>
@@ -135,7 +122,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="agh.cs.lab2" />
       <option name="MAIN_CLASS_NAME" value="agh.cs.lab2.Vector2dTest" />
-      <option name="METHOD_NAME" value="upperRight" />
+      <option name="METHOD_NAME" value="testEquals" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -143,10 +130,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Vector2dTest.add" />
-        <item itemvalue="JUnit.Vector2dTest.lowerLeft" />
-        <item itemvalue="JUnit.Vector2dTest.upperRight" />
-        <item itemvalue="JUnit.MapDirectionTest.previous" />
+        <item itemvalue="JUnit.Vector2dTest.testEquals" />
+        <item itemvalue="JUnit.Vector2dTest.opposite" />
+        <item itemvalue="JUnit.Vector2dTest.subtract" />
+        <item itemvalue="Application.World" />
         <item itemvalue="JUnit.All in javaLab" />
       </list>
     </recent_temporary>

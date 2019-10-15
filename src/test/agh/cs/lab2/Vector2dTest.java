@@ -82,17 +82,53 @@ public class Vector2dTest {
 
     @Test
     public void subtract() {
+        Vector2d v1 = new Vector2d(6,3);
+        Vector2d v2 = new Vector2d(-4,5);
+        Vector2d v3 = new Vector2d(2,-1);
+        Vector2d v4 = new Vector2d(-1,5);
+
+        Assert.assertEquals(v1.subtract(v2), new Vector2d(10,-2));
+        Assert.assertEquals(v2.subtract(v3), new Vector2d(-6,6));
+        Assert.assertEquals(v3.subtract(v4), new Vector2d(3,-6));
+        Assert.assertEquals(v4.subtract(v1), new Vector2d(-7,2));
     }
 
     @Test
     public void opposite() {
+        Vector2d v1 = new Vector2d(6,3);
+        Vector2d v2 = new Vector2d(-4,5);
+        Vector2d v3 = new Vector2d(2,0);
+        Vector2d v4 = new Vector2d(0,-5);
+        Vector2d v5 = new Vector2d(0, 0);
+
+        Assert.assertEquals(v1.opposite(), new Vector2d(-6, -3));
+        Assert.assertEquals(v2.opposite(), new Vector2d(4, -5));
+        Assert.assertEquals(v3.opposite(), new Vector2d(-2, 0));
+        Assert.assertEquals(v4.opposite(), new Vector2d(0, 5));
+        Assert.assertEquals(v5.opposite(), new Vector2d(0, 0));
+
     }
 
     @Test
-    public void testEquals() {
+    public void
+    testEquals() {
+        Vector2d v1 = new Vector2d(6,3);
+        Vector2d v2 = new Vector2d(-4,5);
+        Vector2d v3 = new Vector2d(0,0);
+
+        Assert.assertTrue(v1.equals(new Vector2d(6,3)));
+        Assert.assertFalse(v1.equals(new Vector2d(-4, 5)));
+
+        Assert.assertTrue(v2.equals(v2));
+        Assert.assertFalse(v2.equals(new Vector2d(6, 3)));
+
+        Assert.assertFalse(v2.equals(new Vector2d(0,0)));
+        Assert.assertFalse(v2.equals(v3));
+        Assert.assertTrue(v3.equals(new Vector2d(0,0)));
     }
 
     @Test
     public void testToString() {
+
     }
 }
