@@ -129,6 +129,14 @@ public class Vector2dTest {
 
     @Test
     public void testToString() {
+        Vector2d v1 = new Vector2d(6,3);
+        Vector2d v2 = new Vector2d(-4,5);
+        Vector2d v3 = new Vector2d(2,-1);
+        Vector2d v4 = new Vector2d(-1,5);
 
+        Assert.assertEquals(v1.toString(), "(6,3)");
+        Assert.assertEquals(v2.toString(), "(-4,5)");
+        Assert.assertEquals(v3.toString(), "(2,-1)");
+        Assert.assertNotEquals(v4.toString(), "(1,5)");
     }
 }
