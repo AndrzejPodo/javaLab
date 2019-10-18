@@ -56,6 +56,6 @@ public class Vector2d {
 
     @Override
     public String toString() {
-        return "("+this.x+","+this.y+")";
+        return String.format("(%d,%d)",this.x, this.y);
     }
 }
