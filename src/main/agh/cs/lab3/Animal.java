@@ -32,11 +32,19 @@ public class Animal {
         }
     }
 
+    public MapDirection getOrientation() {
+        return this.orientation;
+    }
+
+    public Vector2d getPosition() {
+        return this.position;
+    }
+
     @Override
     public String toString() {
         StringBuilder str = new StringBuilder();
         str.append("Orientation: ");
-        str.append(this.orientation);
+        str.append(this.orientation.name());
         str.append("\nPosition: ");
         str.append(this.position);
         return str.toString();

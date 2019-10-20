@@ -28,8 +28,10 @@ public class OptionsParser {
     public MoveDirection[] parse(String[] commands){
         List<MoveDirection> directions = new LinkedList<>();
         for(String command : commands){
-           directions.add(dictionary.get(command));
+            if(dictionary.containsKey(command)) {
+                directions.add(dictionary.get(command));
+            }
         }
-        return (MoveDirection[]) directions.toArray();
+        return directions.stream().toArray(MoveDirection[]::new);
     }
 }
