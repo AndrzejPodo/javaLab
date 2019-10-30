@@ -9,7 +9,7 @@ public class Vector2d {
         this.y = y;
     }
 
-    public boolean precedens(Vector2d other){
+    public boolean precedes(Vector2d other){
         return this.x <= other.x && this.y <= other.y;
     }
 

@@ -2,10 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c54a7be8-46dd-41b1-9317-57838a4b6c6a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.attach_pid4431" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.attach_pid9523" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/javaLab.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/javaLab.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/javaLab/agh/cs/lab2/Vector2d.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/javaLab/agh/cs/lab2/Vector2d.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab2/Vector2d.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab2/Vector2d.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab3/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab3/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab3/OptionsParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab3/OptionsParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab3/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab3/World.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/agh/cs/lab2/Vector2dTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/agh/cs/lab2/Vector2dTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/agh/cs/lab3/AnimalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/agh/cs/lab3/AnimalTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/stale_outputs_checked" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,8 +23,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit4 Test Class" />
+        <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -61,7 +69,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in javaLab">
+  <component name="RunManager" selected="JUnit.IntegrationTest.testIntegration2">
+    <configuration name="World" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="agh.cs.lab4.World" />
+      <module name="javaLab" />
+      <option name="PROGRAM_PARAMETERS" value="f b r l f f r r f f f f f f f f" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="agh.cs.lab4.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="All in javaLab" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaLab" />
       <option name="PACKAGE_NAME" value="" />
@@ -70,83 +92,68 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AnimalTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IntegrationTest.testIntegration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaLab" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="agh.cs.lab3.*" />
+          <option name="PATTERN" value="agh.cs.lab4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="agh.cs.lab3" />
-      <option name="MAIN_CLASS_NAME" value="agh.cs.lab3.AnimalTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OptionsParserTest.testParseNormal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javaLab" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="agh.cs.lab3.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="agh.cs.lab3" />
-      <option name="MAIN_CLASS_NAME" value="agh.cs.lab3.OptionsParserTest" />
-      <option name="METHOD_NAME" value="testParseNormal" />
+      <option name="PACKAGE_NAME" value="agh.cs.lab4" />
+      <option name="MAIN_CLASS_NAME" value="agh.cs.lab4.IntegrationTest" />
+      <option name="METHOD_NAME" value="testIntegration" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OptionsParserTest.testParseWithEmptyCommands" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IntegrationTest.testIntegration2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaLab" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="agh.cs.lab3.*" />
+          <option name="PATTERN" value="agh.cs.lab4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="agh.cs.lab3" />
-      <option name="MAIN_CLASS_NAME" value="agh.cs.lab3.OptionsParserTest" />
-      <option name="METHOD_NAME" value="testParseWithEmptyCommands" />
+      <option name="PACKAGE_NAME" value="agh.cs.lab4" />
+      <option name="MAIN_CLASS_NAME" value="agh.cs.lab4.IntegrationTest" />
+      <option name="METHOD_NAME" value="testIntegration2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OptionsParserTest.testParseWithUnknownCommands" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IntegrationTest.testPlace" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaLab" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="agh.cs.lab3.*" />
+          <option name="PATTERN" value="agh.cs.lab4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="agh.cs.lab3" />
-      <option name="MAIN_CLASS_NAME" value="agh.cs.lab3.OptionsParserTest" />
-      <option name="METHOD_NAME" value="testParseWithUnknownCommands" />
+      <option name="PACKAGE_NAME" value="agh.cs.lab4" />
+      <option name="MAIN_CLASS_NAME" value="agh.cs.lab4.IntegrationTest" />
+      <option name="METHOD_NAME" value="testPlace" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.AnimalTest" />
-      <item itemvalue="JUnit.OptionsParserTest.testParseNormal" />
-      <item itemvalue="JUnit.OptionsParserTest.testParseWithUnknownCommands" />
-      <item itemvalue="JUnit.OptionsParserTest.testParseWithEmptyCommands" />
+      <item itemvalue="Application.World" />
+      <item itemvalue="JUnit.IntegrationTest.testPlace" />
       <item itemvalue="JUnit.All in javaLab" />
+      <item itemvalue="JUnit.IntegrationTest.testIntegration" />
+      <item itemvalue="JUnit.IntegrationTest.testIntegration2" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.IntegrationTest.testIntegration2" />
+        <item itemvalue="JUnit.IntegrationTest.testIntegration" />
+        <item itemvalue="Application.World" />
         <item itemvalue="JUnit.All in javaLab" />
-        <item itemvalue="JUnit.OptionsParserTest.testParseWithEmptyCommands" />
-        <item itemvalue="JUnit.OptionsParserTest.testParseWithUnknownCommands" />
-        <item itemvalue="JUnit.OptionsParserTest.testParseNormal" />
-        <item itemvalue="JUnit.AnimalTest" />
+        <item itemvalue="JUnit.IntegrationTest.testPlace" />
       </list>
     </recent_temporary>
   </component>
@@ -175,21 +182,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/agh/cs/lab3/Animal.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/agh/cs/lab3/OptionsParser.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

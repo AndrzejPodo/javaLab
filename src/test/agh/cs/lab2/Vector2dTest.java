@@ -9,15 +9,15 @@ public class Vector2dTest {
 
     @Test
     public void precedens() {
-        Assert.assertTrue(v.precedens(new Vector2d(1,1)));
-        Assert.assertFalse(v.precedens(new Vector2d(1,-1)));
-        Assert.assertFalse(v.precedens(new Vector2d(-1,1)));
-        Assert.assertFalse(v.precedens(new Vector2d(-1,-1)));
-        Assert.assertTrue(v.precedens(new Vector2d(0,1)));
-        Assert.assertTrue(v.precedens(new Vector2d(1,0)));
-        Assert.assertFalse(v.precedens(new Vector2d(-1,0)));
-        Assert.assertFalse(v.precedens(new Vector2d(0,-1)));
-        Assert.assertTrue(v.precedens(new Vector2d(0,0)));
+        Assert.assertTrue(v.precedes(new Vector2d(1,1)));
+        Assert.assertFalse(v.precedes(new Vector2d(1,-1)));
+        Assert.assertFalse(v.precedes(new Vector2d(-1,1)));
+        Assert.assertFalse(v.precedes(new Vector2d(-1,-1)));
+        Assert.assertTrue(v.precedes(new Vector2d(0,1)));
+        Assert.assertTrue(v.precedes(new Vector2d(1,0)));
+        Assert.assertFalse(v.precedes(new Vector2d(-1,0)));
+        Assert.assertFalse(v.precedes(new Vector2d(0,-1)));
+        Assert.assertTrue(v.precedes(new Vector2d(0,0)));
     }
 
     @Test
@@ -42,7 +42,7 @@ public class Vector2dTest {
         Vector2d v5 = new Vector2d(0,-1);
         Vector2d v6 = new Vector2d(0,0);
 
-        Assert.assertEquals(v.upperRight(v1),new Vector2d(1,1));
+        Assert.assertEquals(v.upperRight(v1),v1);
         Assert.assertEquals(v.upperRight(v2),new Vector2d(0,1));
         Assert.assertEquals(v.upperRight(v3),new Vector2d(1,0));
         Assert.assertEquals(v.upperRight(v4),new Vector2d(0,0));

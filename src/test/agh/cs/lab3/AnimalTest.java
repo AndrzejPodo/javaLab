@@ -11,7 +11,7 @@ public class AnimalTest {
     Animal animal;
 
     @Before
-    public void setUp() throws Exception {
+    public void setUp(){
         animal = new Animal();
 
         Assert.assertEquals(animal.getPosition(), new Vector2d(2,2));
@@ -150,5 +150,19 @@ public class AnimalTest {
         animal.move(MoveDirection.FORWARD);
 
         Assert.assertEquals(animal.getPosition(), new Vector2d(0,2));
+    }
+
+    @Test
+    public void testToString(){
+        Assert.assertEquals(animal.toString(), "N");
+        animal.move(MoveDirection.RIGHT);
+
+        Assert.assertEquals(animal.toString(), "E");
+        animal.move(MoveDirection.RIGHT);
+
+        Assert.assertEquals(animal.toString(), "S");
+        animal.move(MoveDirection.RIGHT);
+
+        Assert.assertEquals(animal.toString(), "W");
     }
 }
