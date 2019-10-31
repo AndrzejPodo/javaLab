@@ -21,11 +21,7 @@ public class RectangularMap implements IWorldMap {
 
     @Override
     public boolean canMoveTo(Vector2d position) {
-        if(position.x >=0 && position.x <= width && position.y >= 0 && position.y <= height && !isOccupied(position)) {
-            return true;
-        }else {
-            return false;
-        }
+        return position.precedes(new Vector2d(width, height)) && position.follows(new Vector2d(0, 0)) && !isOccupied(position);
     }
 
     @Override

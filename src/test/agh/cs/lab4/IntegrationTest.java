@@ -1,5 +1,6 @@
 package agh.cs.lab4;
 
+import agh.cs.lab2.MapDirection;
 import agh.cs.lab2.MoveDirection;
 import agh.cs.lab2.Vector2d;
 import agh.cs.lab3.Animal;
@@ -67,6 +68,8 @@ public class IntegrationTest {
 
         Assert.assertEquals(animal1.getPosition(), new Vector2d(2,0));
         Assert.assertEquals(animal2.getPosition(), new Vector2d(3,5));
+        Assert.assertEquals(animal1.getOrientation(), MapDirection.SOUTH);
+        Assert.assertEquals(animal2.getOrientation(), MapDirection.NORTH);
     }
     @Test
     public void testIntegration2(){
@@ -76,5 +79,7 @@ public class IntegrationTest {
 
         Assert.assertEquals(animal1.getPosition(), new Vector2d(3,1));
         Assert.assertEquals(animal2.getPosition(), new Vector2d(3,0));
+        Assert.assertEquals(animal1.getOrientation(), MapDirection.SOUTH);
+        Assert.assertEquals(animal2.getOrientation(), MapDirection.SOUTH);
     }
 }

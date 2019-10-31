@@ -3,6 +3,7 @@ package agh.cs.lab3;
 import agh.cs.lab2.MapDirection;
 import agh.cs.lab2.MoveDirection;
 import agh.cs.lab2.Vector2d;
+import agh.cs.lab4.RectangularMap;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -12,7 +13,7 @@ public class AnimalTest {
 
     @Before
     public void setUp(){
-        animal = new Animal();
+        animal = new Animal(new RectangularMap(4,4));
 
         Assert.assertEquals(animal.getPosition(), new Vector2d(2,2));
         Assert.assertEquals(animal.getOrientation(), MapDirection.NORTH);

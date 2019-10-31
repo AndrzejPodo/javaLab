@@ -4,8 +4,9 @@ import agh.cs.lab2.MapDirection;
 import agh.cs.lab2.MoveDirection;
 import agh.cs.lab2.Vector2d;
 import agh.cs.lab4.IWorldMap;
+import agh.cs.lab5.Placable;
 
-public class Animal {
+public class Animal implements Placable {
     private MapDirection orientation = MapDirection.NORTH;
     private Vector2d position = new Vector2d(2,2);
     private IWorldMap map;
@@ -42,11 +43,12 @@ public class Animal {
                 break;
         }
 
-        if((map != null && map.canMoveTo(temporaryPosition))){
-            this.position = temporaryPosition;
-        }else if(map == null &&  (temporaryPosition.x >=0 && temporaryPosition.x <= 4 && temporaryPosition.y >= 0 && temporaryPosition.y <= 4)){
+        if((map != null && map.canMoveTo(temporaryPosition))) {
             this.position = temporaryPosition;
         }
+//        }else if(map == null &&  (temporaryPosition.x >=0 && temporaryPosition.x <= 4 && temporaryPosition.y >= 0 && temporaryPosition.y <= 4)){
+//            this.position = temporaryPosition;
+//        }
     }
 
     public MapDirection getOrientation() {
