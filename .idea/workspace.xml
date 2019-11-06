@@ -5,8 +5,10 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab3/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab3/Animal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab4/RectangularMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab4/RectangularMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/agh/cs/lab3/AnimalTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/agh/cs/lab3/AnimalTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/agh/cs/lab4/IntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/agh/cs/lab4/IntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab5/Placable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab5/IMapElement.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab5/Rock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab5/Grass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab5/UnboundedMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab5/GrassField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab5/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab5/World.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +20,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit4 Test Class" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -63,14 +65,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.World">
+  <component name="RunManager" selected="JUnit.All in javaLab">
     <configuration name="World" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="agh.cs.lab4.World" />
+      <option name="MAIN_CLASS_NAME" value="agh.cs.lab5.World" />
       <module name="javaLab" />
-      <option name="PROGRAM_PARAMETERS" value="f b r l f f r r f f f f f f f f" />
+      <option name="PROGRAM_PARAMETERS" value="f l f l r f f f r f f f f f f f" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="agh.cs.lab4.*" />
+          <option name="PATTERN" value="agh.cs.lab5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,12 +106,12 @@
       <module name="javaLab" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="agh.cs.lab4.*" />
+          <option name="PATTERN" value="agh.cs.lab5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="agh.cs.lab4" />
-      <option name="MAIN_CLASS_NAME" value="agh.cs.lab4.IntegrationTest" />
+      <option name="PACKAGE_NAME" value="agh.cs.lab5" />
+      <option name="MAIN_CLASS_NAME" value="agh.cs.lab5.IntegrationTest" />
       <option name="METHOD_NAME" value="testIntegration" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -120,13 +122,29 @@
       <module name="javaLab" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="agh.cs.lab4.*" />
+          <option name="PATTERN" value="agh.cs.lab5.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="agh.cs.lab4" />
-      <option name="MAIN_CLASS_NAME" value="agh.cs.lab4.IntegrationTest" />
+      <option name="PACKAGE_NAME" value="agh.cs.lab5" />
+      <option name="MAIN_CLASS_NAME" value="agh.cs.lab5.IntegrationTest" />
       <option name="METHOD_NAME" value="testIntegration2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="IntegrationTest.testMapResize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaLab" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="agh.cs.lab5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="agh.cs.lab5" />
+      <option name="MAIN_CLASS_NAME" value="agh.cs.lab5.IntegrationTest" />
+      <option name="METHOD_NAME" value="testMapResize" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -134,17 +152,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.World" />
-      <item itemvalue="JUnit.All in javaLab" />
       <item itemvalue="JUnit.IntegrationTest.testIntegration" />
       <item itemvalue="JUnit.IntegrationTest.testIntegration2" />
+      <item itemvalue="JUnit.IntegrationTest.testMapResize" />
+      <item itemvalue="JUnit.All in javaLab" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.World" />
+        <item itemvalue="JUnit.All in javaLab" />
+        <item itemvalue="JUnit.IntegrationTest.testMapResize" />
+        <item itemvalue="JUnit.IntegrationTest.testIntegration2" />
         <item itemvalue="Application.World" />
         <item itemvalue="JUnit.IntegrationTest.testIntegration" />
-        <item itemvalue="JUnit.IntegrationTest.testIntegration2" />
-        <item itemvalue="JUnit.All in javaLab" />
       </list>
     </recent_temporary>
   </component>
@@ -173,5 +192,31 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/agh/cs/lab5/IntegrationTest.java</url>
+          <line>115</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/agh/cs/lab5/IntegrationTest.java</url>
+          <line>108</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/agh/cs/lab5/GrassField.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/agh/cs/lab5/GrassField.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
