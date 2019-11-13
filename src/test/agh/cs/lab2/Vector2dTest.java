@@ -137,6 +137,6 @@ public class Vector2dTest {
         Assert.assertEquals(v1.toString(), "(6,3)");
         Assert.assertEquals(v2.toString(), "(-4,5)");
         Assert.assertEquals(v3.toString(), "(2,-1)");
-        Assert.assertNotEquals(v4.toString(), "(1,5)");
+        Assert.assertNotSame(v4.toString(), "(1,5)");
     }
 }

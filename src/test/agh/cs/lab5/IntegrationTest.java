@@ -7,6 +7,7 @@ import agh.cs.lab3.Animal;
 import agh.cs.lab3.OptionsParser;
 import agh.cs.lab4.IWorldMap;
 import agh.cs.lab4.RectangularMap;
+import agh.cs.lab6.FieldOccupiedException;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -20,7 +21,7 @@ public class IntegrationTest {
     OptionsParser optionsParser = new OptionsParser();
 
     @Before
-    public void setUp(){
+    public void setUp() throws FieldOccupiedException{
         map = new GrassField(0);
         animal1 = new Animal(map);
         animal2 = new Animal(map, new Vector2d(3,4));
@@ -55,12 +56,16 @@ public class IntegrationTest {
         Assert.assertTrue(map.canMoveTo(new Vector2d(10,6)));
     }
 
-    @Test
-    public void testPlace(){
-        Assert.assertTrue(map.place(new Animal(map, new Vector2d(0,0))));
-        Assert.assertTrue(map.place(new Animal(map, new Vector2d(4,4))));
-        Assert.assertTrue(map.place(new Animal(map, new Vector2d(0,-1))));
-        Assert.assertFalse(map.place(new Animal(map, new Vector2d(3,4))));
+    @Test()
+    public void testPlace() throws FieldOccupiedException{
+        map.place(new Animal(map, new Vector2d(0,0)));
+        map.place(new Animal(map, new Vector2d(4,4)));
+        map.place(new Animal(map, new Vector2d(0,-1)));
+    }
+
+    @Test(expected = FieldOccupiedException.class)
+    public void testPlaceOccupied() throws FieldOccupiedException{
+        map.place(new Animal(map, new Vector2d(3,4)));
     }
 
     @Test
@@ -88,7 +93,7 @@ public class IntegrationTest {
     }
 
     @Test
-    public void testMapResize(){
+    public void testMapResize() throws FieldOccupiedException {
         GrassField grassField = new GrassField(0);
         animal1 = new Animal(grassField, new Vector2d(3,1));
         animal2 = new Animal(grassField, new Vector2d(4,2));

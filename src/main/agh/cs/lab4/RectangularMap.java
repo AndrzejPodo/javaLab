@@ -4,6 +4,7 @@ import agh.cs.lab2.MoveDirection;
 import agh.cs.lab2.Vector2d;
 import agh.cs.lab3.Animal;
 import agh.cs.lab5.AbstractWorldMap;
+import agh.cs.lab6.FieldOccupiedException;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,13 +26,11 @@ public class RectangularMap extends AbstractWorldMap implements IWorldMap {
     }
 
     @Override
-    public boolean place(Animal animal) {
+    public void place(Animal animal) throws FieldOccupiedException {
         if(canMoveTo(animal.getPosition())){
             animals.add(animal);
-            return true;
-        }else {
-            return false;
         }
+        else throw new FieldOccupiedException(String.format("Field (%d,%d) is already occupied, or filed is out of map bounds.",animal.getPosition().x,animal.getPosition().y));
     }
 
     @Override

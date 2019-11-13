@@ -1,15 +1,12 @@
 package agh.cs.lab3;
 
 import agh.cs.lab2.MoveDirection;
-import org.junit.Assert;
-import org.junit.Before;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
 public class OptionsParserTest {
     OptionsParser optionsParser = new OptionsParser();
-
 
     @Test
     public void testParseNormal() {
@@ -19,18 +16,17 @@ public class OptionsParserTest {
                 MoveDirection.LEFT, MoveDirection.RIGHT, MoveDirection.FORWARD, MoveDirection.BACKWARD
         };
 
-        Assert.assertArrayEquals(expectedResult, optionsParser.parse(commands));
+        assertArrayEquals(expectedResult, optionsParser.parse(commands));
     }
 
-    @Test
+    @Test(expected = IllegalArgumentException.class)
     public void testParseWithUnknownCommands() {
         String[] commands = {"lext","right","forward","backwar","l","x","f","back"};
         MoveDirection[] expectedResult = {
                 MoveDirection.RIGHT, MoveDirection.FORWARD,
                 MoveDirection.LEFT, MoveDirection.FORWARD
         };
-
-        Assert.assertArrayEquals(expectedResult, optionsParser.parse(commands));
+        optionsParser.parse(commands);
     }
 
     @Test
@@ -38,6 +34,6 @@ public class OptionsParserTest {
         String[] commands = {};
         MoveDirection[] expectedResult = {};
 
-        Assert.assertArrayEquals(expectedResult, optionsParser.parse(commands));
+        assertArrayEquals(expectedResult, optionsParser.parse(commands));
     }
 }

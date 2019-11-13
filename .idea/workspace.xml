@@ -2,13 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c54a7be8-46dd-41b1-9317-57838a4b6c6a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/javaLab.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/javaLab.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab2/Vector2d.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab2/Vector2d.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab3/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab3/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab3/OptionsParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab3/OptionsParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab4/IWorldMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab4/IWorldMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab4/RectangularMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab4/RectangularMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab5/Placable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab5/IMapElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab5/Rock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab5/Grass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab5/UnboundedMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab5/GrassField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab4/World.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab5/AbstractWorldMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab5/AbstractWorldMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab5/GrassField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab5/GrassField.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab5/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab5/World.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/agh/cs/lab2/Vector2dTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/agh/cs/lab2/Vector2dTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/agh/cs/lab3/OptionsParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/agh/cs/lab3/OptionsParserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/agh/cs/lab4/IntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/agh/cs/lab4/IntegrationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/agh/cs/lab5/IntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/agh/cs/lab5/IntegrationTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,20 +77,6 @@
     <configuration name="World" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="agh.cs.lab5.World" />
       <module name="javaLab" />
-      <option name="PROGRAM_PARAMETERS" value="f l f l r f f f r f f f f f f f" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="agh.cs.lab5.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="World" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="agh.cs.lab5.World" />
-      <module name="javaLab" />
       <option name="PROGRAM_PARAMETERS" value="f b r l f f r r f f f f f f f f" />
       <extension name="coverage">
         <pattern>
@@ -102,39 +96,39 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IntegrationTest.testIntegration" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="IntegrationTest.testPlace" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaLab" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="agh.cs.lab5.*" />
+          <option name="PATTERN" value="agh.cs.lab4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="agh.cs.lab5" />
-      <option name="MAIN_CLASS_NAME" value="agh.cs.lab5.IntegrationTest" />
-      <option name="METHOD_NAME" value="testIntegration" />
+      <option name="PACKAGE_NAME" value="agh.cs.lab4" />
+      <option name="MAIN_CLASS_NAME" value="agh.cs.lab4.IntegrationTest" />
+      <option name="METHOD_NAME" value="testPlace" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IntegrationTest.testIntegration2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OptionsParserTest.testParseWithUnknownCommands" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaLab" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="agh.cs.lab5.*" />
+          <option name="PATTERN" value="agh.cs.lab3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="agh.cs.lab5" />
-      <option name="MAIN_CLASS_NAME" value="agh.cs.lab5.IntegrationTest" />
-      <option name="METHOD_NAME" value="testIntegration2" />
+      <option name="PACKAGE_NAME" value="agh.cs.lab3" />
+      <option name="MAIN_CLASS_NAME" value="agh.cs.lab3.OptionsParserTest" />
+      <option name="METHOD_NAME" value="testParseWithUnknownCommands" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IntegrationTest.testMapResize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="agh.cs.lab5 in javaLab" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaLab" />
       <extension name="coverage">
         <pattern>
@@ -143,27 +137,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="agh.cs.lab5" />
-      <option name="MAIN_CLASS_NAME" value="agh.cs.lab5.IntegrationTest" />
-      <option name="METHOD_NAME" value="testMapResize" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="package" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
       <item itemvalue="Application.World" />
-      <item itemvalue="JUnit.IntegrationTest.testIntegration" />
-      <item itemvalue="JUnit.IntegrationTest.testIntegration2" />
-      <item itemvalue="JUnit.IntegrationTest.testMapResize" />
       <item itemvalue="JUnit.All in javaLab" />
+      <item itemvalue="JUnit.agh.cs.lab5 in javaLab" />
+      <item itemvalue="JUnit.OptionsParserTest.testParseWithUnknownCommands" />
+      <item itemvalue="JUnit.IntegrationTest.testPlace" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in javaLab" />
-        <item itemvalue="JUnit.IntegrationTest.testMapResize" />
-        <item itemvalue="JUnit.IntegrationTest.testIntegration2" />
+        <item itemvalue="JUnit.IntegrationTest.testPlace" />
         <item itemvalue="Application.World" />
-        <item itemvalue="JUnit.IntegrationTest.testIntegration" />
+        <item itemvalue="JUnit.OptionsParserTest.testParseWithUnknownCommands" />
+        <item itemvalue="JUnit.agh.cs.lab5 in javaLab" />
       </list>
     </recent_temporary>
   </component>
@@ -192,31 +184,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/agh/cs/lab5/IntegrationTest.java</url>
-          <line>115</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/agh/cs/lab5/IntegrationTest.java</url>
-          <line>108</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/agh/cs/lab5/GrassField.java</url>
-          <line>73</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/agh/cs/lab5/GrassField.java</url>
-          <line>75</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

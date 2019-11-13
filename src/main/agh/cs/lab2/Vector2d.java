@@ -55,6 +55,16 @@ public class Vector2d {
     }
 
     @Override
+    public int hashCode() {
+        int hash = 13;
+
+        hash += this.x * 37;
+        hash += this.y * 17;
+
+        return hash;
+    }
+
+    @Override
     public String toString() {
         return String.format("(%d,%d)",this.x, this.y);
     }

@@ -20,8 +20,8 @@ public class Animal implements IMapElement {
     }
 
     public Animal(IWorldMap map, Vector2d initialPosition){
+        this(map);
         this.position = initialPosition;
-        this.map = map;
     }
 
 
@@ -46,9 +46,6 @@ public class Animal implements IMapElement {
         if((map != null && map.canMoveTo(temporaryPosition))) {
             this.position = temporaryPosition;
         }
-//        }else if(map == null &&  (temporaryPosition.x >=0 && temporaryPosition.x <= 4 && temporaryPosition.y >= 0 && temporaryPosition.y <= 4)){
-//            this.position = temporaryPosition;
-//        }
     }
 
     public MapDirection getOrientation() {

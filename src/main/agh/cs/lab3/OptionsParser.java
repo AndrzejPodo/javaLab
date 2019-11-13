@@ -2,7 +2,6 @@ package agh.cs.lab3;
 
 import agh.cs.lab2.MoveDirection;
 
-import java.lang.reflect.Array;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -25,11 +24,13 @@ public class OptionsParser {
         dictionary.put("left", MoveDirection.LEFT);
     }
 
-    public MoveDirection[] parse(String[] commands){
+    public MoveDirection[] parse(String[] commands) throws IllegalArgumentException{
         List<MoveDirection> directions = new LinkedList<>();
         for(String command : commands){
             if(dictionary.containsKey(command)) {
                 directions.add(dictionary.get(command));
+            }else{
+                throw new IllegalArgumentException(command+" is not legal move specification!");
             }
         }
         return directions.stream().toArray(MoveDirection[]::new);

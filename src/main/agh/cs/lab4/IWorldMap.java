@@ -3,6 +3,7 @@ package agh.cs.lab4;
 import agh.cs.lab2.MoveDirection;
 import agh.cs.lab2.Vector2d;
 import agh.cs.lab3.Animal;
+import agh.cs.lab6.FieldOccupiedException;
 
 public interface IWorldMap {
     /**
@@ -21,7 +22,7 @@ public interface IWorldMap {
      *            The animal to place on the map.
      * @return True if the animal was placed. The animal cannot be placed if the map is already occupied.
      */
-    boolean place(Animal animal);
+    void place(Animal animal) throws FieldOccupiedException;
 
     /**
      * Move the animal on the map according to the provided move directions. Every

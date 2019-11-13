@@ -4,15 +4,14 @@ import agh.cs.lab2.MoveDirection;
 import agh.cs.lab2.Vector2d;
 import agh.cs.lab3.Animal;
 import agh.cs.lab4.IWorldMap;
-import agh.cs.lab4.MapVisualizer;
+import agh.cs.lab6.FieldOccupiedException;
 
 import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
 public class GrassField extends AbstractWorldMap implements IWorldMap {
     private List<Animal> animals = new LinkedList<>();
-    private List<Grass> grasses = new ArrayList<>();;
+    private List<Grass> grasses = new ArrayList<>();
+
     private Vector2d upperRight;
     private Vector2d lowerLeft;
 
@@ -35,7 +34,6 @@ public class GrassField extends AbstractWorldMap implements IWorldMap {
     public GrassField(int n){
         if(n > 0) {
             Random rnd = new Random();
-
             Vector2d position = new Vector2d(rnd.nextInt((int) Math.sqrt(10.0 * n)), rnd.nextInt((int) Math.sqrt(10.0 * n)));
             grasses.add(new Grass(position));
             for (int i = 1; i < n; i++) {
@@ -43,7 +41,6 @@ public class GrassField extends AbstractWorldMap implements IWorldMap {
                     position = new Vector2d(rnd.nextInt((int) Math.sqrt(10.0 * n)), rnd.nextInt((int) Math.sqrt(10.0 * n)));
                 grasses.add(new Grass(position));
             }
-
             for (Grass grass : grasses) {
                 treeByX.put(grass.getPosition(), grass);
                 treeByY.put(grass.getPosition(), grass);
@@ -58,15 +55,14 @@ public class GrassField extends AbstractWorldMap implements IWorldMap {
     }
 
     @Override
-    public boolean place(Animal animal) {
+    public void place(Animal animal) throws FieldOccupiedException {
         if(canMoveTo(animal.getPosition())){
             animals.add(animal);
             treeByX.put(animal.getPosition(), animal);
             treeByY.put(animal.getPosition(), animal);
             resizeMap();
-            return true;
         }
-        return false;
+        else throw new FieldOccupiedException(String.format("Field (%d,%d) is already occupied!",animal.getPosition().x,animal.getPosition().y));
     }
 
     @Override
@@ -74,22 +70,23 @@ public class GrassField extends AbstractWorldMap implements IWorldMap {
         Animal temp;
         for(int i = 0; i < directions.length; i++){
             temp = animals.get(i%animals.size());
-            treeByX.remove(temp.getPosition());
-            treeByY.remove(temp.getPosition());
-            temp.move(directions[i]);
-            treeByX.put(temp.getPosition(), temp);
-            treeByY.put(temp.getPosition(), temp);
+            if(directions[i] == MoveDirection.FORWARD || directions[i] == MoveDirection.BACKWARD) {
+                treeByX.remove(temp.getPosition());
+                treeByY.remove(temp.getPosition());
+                temp.move(directions[i]);
+                treeByX.put(temp.getPosition(), temp);
+                treeByY.put(temp.getPosition(), temp);
+                resizeMap();
+            }else {
+                temp.move(directions[i]);
+            }
         }
-        resizeMap();
     }
 
 
     @Override
     public Object objectAt(Vector2d position) {
-        Animal animalAtPosition = animals.stream().filter(animal -> position.equals(animal.getPosition())).findAny().orElse(null);
-        Grass grassAtPosition = grasses.stream().filter(grass -> position.equals(grass.getPosition())).findAny().orElse(null);
-
-        return (animalAtPosition == null)? grassAtPosition :animalAtPosition;
+        return treeByX.get(position);
     }
 
     @Override
