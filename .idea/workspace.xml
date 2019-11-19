@@ -2,21 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c54a7be8-46dd-41b1-9317-57838a4b6c6a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/javaLab.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/javaLab.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab2/Vector2d.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab2/Vector2d.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab3/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab3/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab3/OptionsParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab3/OptionsParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab4/IWorldMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab4/IWorldMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab4/RectangularMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab4/RectangularMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab4/World.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab5/AbstractWorldMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab5/AbstractWorldMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab5/GrassField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab5/GrassField.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab5/World.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab5/World.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/agh/cs/lab2/Vector2dTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/agh/cs/lab2/Vector2dTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/agh/cs/lab3/OptionsParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/agh/cs/lab3/OptionsParserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/agh/cs/lab4/IntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/agh/cs/lab4/IntegrationTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/agh/cs/lab5/IntegrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/agh/cs/lab5/IntegrationTest.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -184,5 +174,21 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/agh/cs/lab5/IntegrationTest.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/agh/cs/lab4/IntegrationTest.java</url>
+          <line>88</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

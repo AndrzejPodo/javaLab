@@ -9,7 +9,7 @@ import agh.cs.lab6.FieldOccupiedException;
 import java.util.*;
 
 public class GrassField extends AbstractWorldMap implements IWorldMap {
-    private List<Animal> animals = new LinkedList<>();
+
     private List<Grass> grasses = new ArrayList<>();
 
     private Vector2d upperRight;
@@ -60,6 +60,7 @@ public class GrassField extends AbstractWorldMap implements IWorldMap {
             animals.add(animal);
             treeByX.put(animal.getPosition(), animal);
             treeByY.put(animal.getPosition(), animal);
+            animalMap.put(animal.getPosition(), animal);
             resizeMap();
         }
         else throw new FieldOccupiedException(String.format("Field (%d,%d) is already occupied!",animal.getPosition().x,animal.getPosition().y));
@@ -73,9 +74,11 @@ public class GrassField extends AbstractWorldMap implements IWorldMap {
             if(directions[i] == MoveDirection.FORWARD || directions[i] == MoveDirection.BACKWARD) {
                 treeByX.remove(temp.getPosition());
                 treeByY.remove(temp.getPosition());
+                animalMap.remove(temp.getPosition());
                 temp.move(directions[i]);
                 treeByX.put(temp.getPosition(), temp);
                 treeByY.put(temp.getPosition(), temp);
+                animalMap.put(temp.getPosition(), temp);
                 resizeMap();
             }else {
                 temp.move(directions[i]);

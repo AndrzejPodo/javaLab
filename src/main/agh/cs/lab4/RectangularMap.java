@@ -6,14 +6,11 @@ import agh.cs.lab3.Animal;
 import agh.cs.lab5.AbstractWorldMap;
 import agh.cs.lab6.FieldOccupiedException;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class RectangularMap extends AbstractWorldMap implements IWorldMap {
 
     public final int width;
     public final int height;
-    private List<Animal> animals = new ArrayList<>();
 
     public RectangularMap(int width, int height){
         this.width = width;
@@ -29,20 +26,25 @@ public class RectangularMap extends AbstractWorldMap implements IWorldMap {
     public void place(Animal animal) throws FieldOccupiedException {
         if(canMoveTo(animal.getPosition())){
             animals.add(animal);
+            animalMap.put(animal.getPosition(), animal);
         }
         else throw new FieldOccupiedException(String.format("Field (%d,%d) is already occupied, or filed is out of map bounds.",animal.getPosition().x,animal.getPosition().y));
     }
 
     @Override
     public void run(MoveDirection[] directions) {
+        Animal temp;
         for(int i = 0; i < directions.length; i++){
+            temp = animals.get(i%animals.size());
+            animalMap.remove(temp.getPosition(),temp);
             animals.get(i%animals.size()).move(directions[i]);
+            animalMap.put(temp.getPosition(), temp);
         }
     }
 
     @Override
     public Object objectAt(Vector2d position) {
-        return animals.stream().filter(animal -> position.equals(animal.getPosition())).findAny().orElse(null);
+        return animalMap.get(position);
     }
 
     @Override
