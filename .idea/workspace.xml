@@ -3,10 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c54a7be8-46dd-41b1-9317-57838a4b6c6a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab3/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab3/Animal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab4/RectangularMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab4/RectangularMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab5/AbstractWorldMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab5/AbstractWorldMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab5/GrassField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab5/GrassField.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/agh/cs/lab7/MapBoundary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/agh/cs/lab7/MapBoundary.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -86,6 +86,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="IntegrationTest.testMapResize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="javaLab" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="agh.cs.lab5.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="agh.cs.lab5" />
+      <option name="MAIN_CLASS_NAME" value="agh.cs.lab5.IntegrationTest" />
+      <option name="METHOD_NAME" value="testMapResize" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="IntegrationTest.testPlace" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="javaLab" />
       <extension name="coverage">
@@ -118,34 +134,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="agh.cs.lab5 in javaLab" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="javaLab" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="agh.cs.lab5.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="agh.cs.lab5" />
-      <option name="TEST_OBJECT" value="package" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.World" />
       <item itemvalue="JUnit.All in javaLab" />
-      <item itemvalue="JUnit.agh.cs.lab5 in javaLab" />
       <item itemvalue="JUnit.OptionsParserTest.testParseWithUnknownCommands" />
       <item itemvalue="JUnit.IntegrationTest.testPlace" />
+      <item itemvalue="JUnit.IntegrationTest.testMapResize" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in javaLab" />
+        <item itemvalue="JUnit.IntegrationTest.testMapResize" />
         <item itemvalue="JUnit.IntegrationTest.testPlace" />
         <item itemvalue="Application.World" />
         <item itemvalue="JUnit.OptionsParserTest.testParseWithUnknownCommands" />
-        <item itemvalue="JUnit.agh.cs.lab5 in javaLab" />
       </list>
     </recent_temporary>
   </component>
@@ -174,21 +176,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/agh/cs/lab5/IntegrationTest.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/agh/cs/lab4/IntegrationTest.java</url>
-          <line>88</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

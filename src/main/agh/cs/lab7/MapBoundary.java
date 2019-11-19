@@ -8,16 +8,19 @@ import java.util.TreeMap;
 
 public class MapBoundary implements IPositionChangeObserver {
 
+    private boolean resize;
     private Vector2d upperRight = new Vector2d(0,0);
     private Vector2d lowerLeft = new Vector2d(0,0);
 
     public MapBoundary(List<IMapElement> elements){
+        this.resize = true;
         for (IMapElement element: elements) {
             addElement(element);
         }
     }
 
-    public MapBoundary(Vector2d upperRight, Vector2d lowerLeft){
+    public MapBoundary(Vector2d upperRight, Vector2d lowerLeft, boolean resize){
+        this.resize = resize;
         this.upperRight = upperRight;
         this.lowerLeft = lowerLeft;
     }
@@ -46,17 +49,23 @@ public class MapBoundary implements IPositionChangeObserver {
     }
 
     public void addElement(IMapElement element){
-        treeByX.put(element.getPosition(), element);
-        treeByY.put(element.getPosition(), element);
-        resize();
+        if(this.resize) {
+            treeByX.put(element.getPosition(), element);
+            treeByY.put(element.getPosition(), element);
+            resizeMap();
+        }
     }
 
     @Override
     public void positionChanged(Vector2d oldPosition, Vector2d newPosition) {
-
+        if(this.resize) {
+            treeByX.put(newPosition, treeByX.remove(oldPosition));
+            treeByY.put(newPosition, treeByY.remove(oldPosition));
+            resizeMap();
+        }
     }
 
-    private void resize(){
+    private void resizeMap(){
         lowerLeft = new Vector2d(treeByX.firstKey().x, treeByY.firstKey().y);
         upperRight = new Vector2d(treeByX.lastKey().x, treeByY.lastKey().y);
     }
